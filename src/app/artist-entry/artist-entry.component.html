@@ -1,0 +1,76 @@
+<div class="formContainer">
+  <div class="songbox">
+    <form action="/action_page.php">
+        <label for="fname">Song:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+      </form> 
+</div>
+<div class="artistbox">
+    <form action="/action_page.php">
+        <label for="fname">Artist:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+      </form> 
+</div>
+<div class="timestampbox">
+  <form action="/action_page.php">
+      <label for="fname">Timestamp:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+    </form> 
+</div>
+<div class="image-upload-box">
+  Image Upload
+  <button>
+    <mat-icon>add_photo_alternate</mat-icon>
+  </button>
+  
+</div>
+<div class="statusbox">
+  Released
+  <div> No/Yes</div>
+  <mat-slide-toggle
+    [(ngModel)]="checked"
+    class="example-margin"
+    [color]="color"
+    (change)="changed()">
+</mat-slide-toggle>
+</div>
+
+<div class="notifybox">
+  Allow Notification
+  <div> No/Yes</div>
+  <mat-slide-toggle color="primary">
+
+  </mat-slide-toggle>
+</div>
+
+<div class="linkbox">
+  <div id="spotifyinput">
+    <div>Add Links To:</div>
+    <form action="/action_page.php">
+      <label for="fname">Spotify:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+    </form> 
+  </div>
+  <div id="soundcloudinput">
+    <form action="/action_page.php">
+      <label for="fname">SoundCloud:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+    </form> 
+  </div>
+  <div id="applemusicinput">
+    <form action="/action_page.php">
+      <label for="fname">Apple Music:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+    </form> 
+  </div>
+</div>
+
+<div class="submitbox">
+  <button type="submit"
+   mat-dialog-close mat-button>
+   Submit
+  </button>
+</div>
+
+
+</div>

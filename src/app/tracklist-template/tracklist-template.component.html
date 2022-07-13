@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="top-banner">
+        <!--Title: should include the 
+        1) playlist image 2) artist name 3) playlist name -->
+    <div class="title">
+        <figure class="hover-img">
+            <img class="playlist-image" src="https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8">
+            <figcaption>
+              <h3>EDIT <br/>IMAGE</h3>
+            </figcaption>
+          </figure>
+        <div class="playlist-image-container">
+            
+        </div>
+        <div class="info">
+            <span contenteditable="true">{{template.artist}}</span>
+            <span contenteditable="true">{{template.playlist}}</span>
+        </div>
+      
+    </div>
+    <div class="embed">
+        <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/album/2fYhqwDWXjbpjaIJPEfKFw?utm_source=generator" width="250" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="button-container">
+        <button mat-icon-button color="primary" aria-label="add button for input" (click)="openArtistEntry()">
+            <mat-icon>add_box</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="delete songs">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="change background">
+            <mat-icon>insert_photo</mat-icon>
+        </button>
+    </div>
+    </div>
+
+<!--header information-->
+<div class="tracklistContainer">
+    <div class ="header">
+        <div class="gridcell-1">
+        </div>
+        <div class="gridcell-2">
+        </div>
+        <div>
+            <div class="headerTitles">Title/Artist</div>
+    
+        </div>
+        <div>
+            <div class="headerTitles">Timestamp</div>
+        </div>
+        <div>
+            <div class="headerTitles">Listen/Get Notified</div>
+        </div>
+    </div>
+<!--tracklist--> 
+<app-song-rows></app-song-rows>   
+    
+<div class="tracklist-container">
+    <app-song-rows></app-song-rows>
+</div>   
+    
+<!--logo-->
+<div class="logoContainer">
+    <img class="logo" src="https://fanpad.xyz/img/logo-white-text.webp">
+</div> 
+<div class="iconContainer">
+    <img class="logoicon" src="https://fanpad.xyz/img/logo-white-image.webp">
+</div>
+  
+</div>

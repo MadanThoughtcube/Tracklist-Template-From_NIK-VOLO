@@ -1,0 +1,155 @@
+.row {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+/* CSS for Tracklist*/
+.grid {
+    display:grid;
+    grid-template-columns: [index] 1% [image] 5% [info] 30% [timestamp] 15% [links] 15%;
+    column-gap: 16px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    border-color: #000000;
+    color:cyan;
+    font-size: medium;
+    font-size: 11px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(211, 211, 211, 0.586);
+}
+
+.grid:hover {
+    background-color: rgba(173, 216, 230, 0.21);
+}
+
+.unreleased-grid {
+    display:grid;
+    grid-template-columns: [index] 1% [image] 5% [info] 30% [timestamp] 15% [links] 15%;
+    column-gap: 16px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    border-color: #000000;
+    color:cyan;
+    font-size: medium;
+    font-size: 11px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(211, 211, 211, 0.586);
+}
+.index{
+    visibility:hidden;
+}
+
+.index-unreleased{
+    visibility:hidden;
+}
+
+
+.song-info{
+    display:grid;
+    height:100%;
+}
+
+.song-info-unreleased{
+    display:grid;
+    height:100%;
+    color:gray;
+}
+
+.timestamp-unreleased {
+    color:gray;
+}
+
+.status-unreleased {
+    color:gray;
+}
+
+
+.songArtist{
+    width:100%;
+}
+
+.desktop-popup{
+    display:none
+}
+
+@media (min-width: 767px) {
+    .grid {
+        display:grid;
+        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 25%;
+        column-gap: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        padding-top:20px;
+        border-color: #000000;
+        color:white;
+        font-size: medium;
+
+    }
+
+    .unreleased-grid {
+        display:grid;
+        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 25%;
+        column-gap: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-color: #000000;
+        color:white;
+        font-size: medium;
+    }
+
+    .grid:hover{
+        background-color: rgba(173, 216, 230, 0.258);
+    }
+    
+    .song-info{
+        display:grid;
+        height:100%;
+    }
+
+    
+    .song-info-unreleased{
+        display:grid;
+        height:100%;
+        color:gray;
+    }
+
+    .index{
+        visibility: visible;
+    }
+
+    .index-unreleased{
+        visibility:visible;
+        display:flex;
+        color:gray;
+    }
+    
+    .songArtist{
+        width:100%;
+    }
+
+    .timestamp-unreleased {
+        color:gray;
+    }
+    
+    .status-unreleased {
+        color:gray;
+    }
+    
+    
+    .mobile-bottomsheet{
+        display:none;
+    }
+
+    .desktop-popup{
+        display:flex
+    }
+}

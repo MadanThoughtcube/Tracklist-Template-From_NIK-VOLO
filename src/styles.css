@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+/*change background here by replacing background image url*/
+html{
+    display: relative;
+    background-image: url(https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8);
+    /*
+    album background: https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8
+    fanpad background: https://fanpad.xyz/img/g.png
+    */
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-dialog-container{
+    background-color: rgba(97, 97, 97, 0.923);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mat-button {
+    background-color: lightgray;
+}
