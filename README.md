@@ -78,8 +78,10 @@ WHAT NEEDS TO BE INPUTTED:
 
 1. Under the "Listen/Get Notified" header, there are two buttons for songs that are unreleased. If an artist says that a song is unreleased in the ARTIST-ENTRY component and they toggle the "Allow Notifications" on, then it will render two buttons. One that says "Notify Me" and button that has the wrench icon. The "Notify Me" button should have the INPUT-FORM component rendered as an overlay. The wrench icon then acts as the editing mechanism where the artist should be able to drag and drop, delete and edit the layout of what the contact/input form looks like.
 
-2. Editing and Plus Icon Functionality
-   Add the new songs
-   Editing, would be an entire overview of the trakclist wiht each track list as a block that is editable
+2. Icons in the Banner (Plus, Pencil, Image)
 
-style the form
+---
+
+a. Plus - the plus icon is how the artsit will bring up the ARTIST-ENTRY component where they can fill out the information for each track
+b. Pencil - the pencil icon is the editing feature of the tracklist, it should bring up an overlay of every track seperated by borders as its own blocks, and the artist should have the ability to drag and move around the tracks, edit the info tracks and delete the tracks
+c. Image - the image icon is where the artist can upload their own image and change the background

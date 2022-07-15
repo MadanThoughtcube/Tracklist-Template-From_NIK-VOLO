@@ -66,11 +66,15 @@
     border-radius: 50%;
   }
 
+  .formContainer {
+    
+  }
+
   .statusbox {
     padding-top: 7px;
   }
 
-  
+
 
   #spotifyinput {
     display: none;
@@ -88,3 +92,18 @@
     padding:12px;
   }
 
+  .btn{
+    background-color: #00a0bf;
+    color: #fff;
+    padding: 8px 45px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 25px;
+    position: relative;
+    width: auto;
+  }
