@@ -19,7 +19,7 @@
     font-size: 11px;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: rgba(211, 211, 211, 0.586);
+    background-color: rgba(211, 211, 211, 0.217);
 }
 
 .grid:hover {
@@ -39,7 +39,7 @@
     font-size: 11px;
     margin-right: 20px;
     margin-left: 20px;
-    background-color: rgba(211, 211, 211, 0.586);
+    background-color: rgba(211, 211, 211, 0.217);
 }
 .index{
     visibility:hidden;

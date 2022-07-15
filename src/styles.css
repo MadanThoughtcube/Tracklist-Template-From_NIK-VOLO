@@ -2,11 +2,7 @@
 /*change background here by replacing background image url*/
 html{
     display: relative;
-    background-image: url(https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8);
-    /*
-    album background: https://i.scdn.co/image/ab67616d0000b27356ac7b86e090f307e218e9c8
-    fanpad background: https://fanpad.xyz/img/g.png
-    */
+    background-image: url(https://fanpad.thoughtcubeit.com/assets/images/mobile-bg.png);
     background-repeat: no-repeat !important;
     background-size: cover;
     background-position: center;
