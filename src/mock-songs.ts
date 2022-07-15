@@ -12,6 +12,6 @@ export const SONGS: Song[] = [
     {index: "9", imageURL:"/Users/garydong/Tracklist (FINAL)/FanPad-Tracklist/src/assets/default_100.png", name: "in my head", artist: "Ariana Grande", timestamp: "3:42", status: true},
     {index: "10", imageURL:"/Users/garydong/Tracklist (FINAL)/FanPad-Tracklist/src/assets/default_100.png", name: "7 rings", artist: "Ariana Grande", timestamp: "2:58", status: true},
     {index: "11", imageURL:"/Users/garydong/Tracklist (FINAL)/FanPad-Tracklist/src/assets/default_100.png", name: "thank u, next", artist: "Ariana Grande", timestamp: "3:27", status: true},
-    {index: "12", imageURL:"/Users/garydong/Tracklist (FINAL)/FanPad-Tracklist/src/assets/default_100.png", name: "break up with your girlfriend, i'm bored ", artist: "Ariana Grande", timestamp: "3:10", status: true},
+    {index: "12", imageURL:"/Users/garydong/Tracklist (FINAL)/FanPad-Tracklist/src/assets/default_100.png", name: "break up with your girlfriend, i'm bored ", artist: "Ariana Grande", timestamp: "3:10", status: true}
 
 ] 

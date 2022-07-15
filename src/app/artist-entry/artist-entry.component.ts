@@ -25,6 +25,9 @@ export class ArtistEntryComponent implements OnInit {
       const applemusic = document.getElementById("applemusicinput") as HTMLInputElement;
       applemusic.style.display = "block";
 
+      const notification = document.getElementById("notifybox") as HTMLInputElement;
+      notification.style.display = "none"
+
     }
     if (this.checked !== true){
       const spotify = document.getElementById("spotifyinput") as HTMLInputElement;
@@ -35,6 +38,10 @@ export class ArtistEntryComponent implements OnInit {
 
       const applemusic = document.getElementById("applemusicinput") as HTMLInputElement;
       applemusic.style.display = "none";
+
+      const notification = document.getElementById("notifybox") as HTMLInputElement;
+      notification.style.display = "block"
+
 
     }
     
