@@ -89,7 +89,7 @@
         </div>
     
         <!--Status of Song-->
-        <div class="status" style="color:gr">
+        <div class="status" style="color:gr; width:140px;">
             <div *ngIf=song.status>
                 <div class="mobile-bottomsheet">
                     <app-bottomsheet></app-bottomsheet>
@@ -101,13 +101,9 @@
                </div>
             </div>
             <div *ngIf=!song.status>
-                <button style="background-color: rgba(128, 128, 128, 0.365); color: white;" mat-raised-button (click)="openDialog()">
+                <button id="notifyme-button" style="background-color: rgba(128, 128, 128, 0.365); color: white;" mat-raised-button (click)="openDialog()">
                     Notify Me
                 </button>
-                <button mat-icon-button aria-label="edit contact options">
-                    <mat-icon>build</mat-icon>
-                </button>
-               
             </div>
     
         </div>

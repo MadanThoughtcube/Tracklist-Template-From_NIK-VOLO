@@ -6,47 +6,45 @@
 
 }
 /* CSS for Tracklist*/
+/*Mobile CSS*/
 .grid {
     display:grid;
-    grid-template-columns: [index] 1% [image] 5% [info] 30% [timestamp] 15% [links] 15%;
+    grid-template-columns: [index] 0% [image] 35% [info] 25% [timestamp] 25% [links] 0%;
     column-gap: 16px;
-    padding-left: 10px;
-    padding-right: 15px;
     padding-bottom: 20px;
+    padding-top: 10px;
     border-color: #000000;
-    color:cyan;
-    font-size: medium;
+    color:white;
     font-size: 11px;
-    margin-left: 20px;
-    margin-right: 20px;
     background-color: rgba(211, 211, 211, 0.217);
+}
+.unreleased-grid {
+    display:grid;
+    grid-template-columns: [index] 0% [image] 35% [info] 25% [timestamp] 20% [links] 0%;
+    column-gap: 16px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-color: #000000;
+    color:white;
+    font-size: 11px;
+    background-color: rgba(211, 211, 211, 0.217);
+    overflow: hidden;
 }
 
 .grid:hover {
     background-color: rgba(173, 216, 230, 0.21);
 }
 
-.unreleased-grid {
-    display:grid;
-    grid-template-columns: [index] 1% [image] 5% [info] 30% [timestamp] 15% [links] 15%;
-    column-gap: 16px;
-    padding-left: 10px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    border-color: #000000;
-    color:cyan;
-    font-size: medium;
-    font-size: 11px;
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: rgba(211, 211, 211, 0.217);
-}
 .index{
     visibility:hidden;
 }
 
 .index-unreleased{
     visibility:hidden;
+}
+
+.image{
+    display: none;
 }
 
 
@@ -76,12 +74,18 @@
 
 .desktop-popup{
     display:none
+
+}
+#notifyme-button{
+    transform: scale(.85);
+    text-align: center;
 }
 
+/*Desktop CSS*/
 @media (min-width: 767px) {
     .grid {
         display:grid;
-        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 25%;
+        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 18%;
         column-gap: 16px;
         padding-left: 15px;
         padding-right: 15px;
@@ -95,7 +99,7 @@
 
     .unreleased-grid {
         display:grid;
-        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 25%;
+        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 18%;
         column-gap: 16px;
         padding-left: 15px;
         padding-right: 15px;
@@ -131,6 +135,9 @@
         display:flex;
         color:gray;
     }
+    .image{
+        display: grid;
+    }
     
     .songArtist{
         width:100%;
@@ -150,6 +157,6 @@
     }
 
     .desktop-popup{
-        display:flex
+        display:flex;
     }
 }

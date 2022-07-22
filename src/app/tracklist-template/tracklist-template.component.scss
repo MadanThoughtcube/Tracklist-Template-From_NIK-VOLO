@@ -1,20 +1,21 @@
 /* CSS for Header*/
+//Mobile CSS
 .header {
-    display:grid;
-    grid-template-columns: [index] 5.5% [image] 4% [info] 40.5% [timestamp] 25% [links] 25%;
-    column-gap: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-color: #000000;
-    color:white;
-    font-size: medium;
-    text-decoration: underline;
+  display:grid;
+  grid-template-columns: [index] 0% [image] 35% [info] 25% [timestamp] 25% [links] 0%;
+  column-gap: 16px;
+  text-decoration: underline;
+  color:white;
+
 }
 .headerTitles {
-    padding-top: 5px;
-    font-size: 13px;
     color: lightgray;
+    font-size: 11px;
 }
+.gridcell-1{
+  display: none;
+}
+
 
 //Banner
 .title{
@@ -172,4 +173,25 @@ iframe{
     to {
         transform: rotate(360deg);
     }
+  }
+
+
+  //Desktop CSS
+  @media (min-width: 767px) {
+    .header {
+      display:grid;
+      grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 18%;
+      column-gap: 16px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top:20px;
+      border-color: #000000;
+      color:white;
+      font-size: medium;
+      text-decoration: underline;
+  }
+  .gridcell-1{
+    display: grid;
+  }
+
   }
