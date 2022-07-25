@@ -72,9 +72,12 @@
     padding-top: 15px;
     color:gray;
 }
-
+.status{
+    padding-top: 6px;
+}
 .status-unreleased {
     color:gray;
+    padding-top: 3px;
 }
 
 
@@ -176,7 +179,9 @@
         color:gray;
         padding-top: 15px;
     }
-    
+    .status{
+        padding-top: 4px;
+    }
     .status-unreleased {
         color:gray;
     }
