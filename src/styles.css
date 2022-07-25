@@ -26,9 +26,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-button {
     background-color: lightgray;
 }
-
-
-
-/*Desktop CSS*/
-@media (min-width: 767px) {
-}

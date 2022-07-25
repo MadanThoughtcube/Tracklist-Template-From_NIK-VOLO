@@ -129,7 +129,7 @@ iframe{
     display:grid;
     color: lightgray;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .input-container{
@@ -212,6 +212,9 @@ iframe{
   }
   .gridcell-2 {
     display:grid;
+  }
+  .info{
+    font-size: 24px;
   }
 
   }
