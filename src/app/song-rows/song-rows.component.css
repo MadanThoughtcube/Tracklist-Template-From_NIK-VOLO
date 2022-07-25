@@ -92,6 +92,12 @@
 #notifyme-button{
     transform: scale(.85);
     text-align: center;
+    width: 103px;
+}
+#listen-button{
+    transform: scale(.85);
+    text-align: center;
+
 }
 
 
@@ -194,4 +200,5 @@
     .desktop-popup{
         display:flex;
     }
+
 }
