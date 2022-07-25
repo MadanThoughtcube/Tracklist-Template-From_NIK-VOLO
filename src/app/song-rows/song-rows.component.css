@@ -9,26 +9,27 @@
 /*Mobile CSS*/
 .grid {
     display:grid;
-    grid-template-columns: [index] 0% [image] 35% [info] 25% [timestamp] 25% [links] 0%;
-    column-gap: 16px;
+    grid-template-columns: [image] 7% [info] 25% [timestamp] 25% [links] 35%;
+    column-gap: 10px;
     padding-bottom: 20px;
     padding-top: 10px;
     border-color: #000000;
     color:white;
     font-size: 11px;
     background-color: rgba(211, 211, 211, 0.217);
+    text-align: center;
 }
 .unreleased-grid {
     display:grid;
-    grid-template-columns: [index] 0% [image] 35% [info] 25% [timestamp] 20% [links] 0%;
-    column-gap: 16px;
+    grid-template-columns: [image] 7% [info] 25% [timestamp] 25% [links] 35%;
+    column-gap: 10px;
     padding-bottom: 20px;
     padding-top: 10px;
     border-color: #000000;
     color:white;
     font-size: 11px;
     background-color: rgba(211, 211, 211, 0.217);
-    overflow: hidden;
+    text-align: center;
 }
 
 .grid:hover {
@@ -36,30 +37,39 @@
 }
 
 .index{
-    visibility:hidden;
+    display: none;
 }
 
 .index-unreleased{
-    visibility:hidden;
+    display: none;
 }
 
 .image{
-    display: none;
+    display: grid;
+    overflow: hidden;
+    min-width: 50px;
+    min-height: 50px;
+    padding-left: 5px;
 }
 
 
 .song-info{
     display:grid;
     height:100%;
+    padding-top: 4px;
 }
 
 .song-info-unreleased{
     display:grid;
     height:100%;
     color:gray;
+    padding-top: 4px;
 }
-
+.timestamp{
+    padding-top: 15px;
+}
 .timestamp-unreleased {
+    padding-top: 15px;
     color:gray;
 }
 
@@ -73,7 +83,7 @@
 }
 
 .desktop-popup{
-    display:none
+    display:none;
 
 }
 #notifyme-button{
@@ -81,34 +91,43 @@
     text-align: center;
 }
 
+
 /*Desktop CSS*/
-@media (min-width: 767px) {
+@media (min-width: 570px) {
     .grid {
         display:grid;
-        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 18%;
-        column-gap: 16px;
+        grid-template-columns: [index] 3% [image] 7% [info] 13% [timestamp] 40% [links] 30%;
+        column-gap: 14px;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 20px;
         padding-top:20px;
+        margin-left: 20px;
+        margin-right: 20px;
         border-color: #000000;
         color:white;
         font-size: medium;
+        text-align: center;
+
 
     }
 
     .unreleased-grid {
         display:grid;
-        grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 18%;
-        column-gap: 16px;
+        grid-template-columns: [index] 3% [image] 7% [info] 13% [timestamp] 40% [links] 30%;
+        column-gap: 14px;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 20px;
         padding-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         border-color: #000000;
         color:white;
         font-size: medium;
+        text-align: center;
     }
+
 
     .grid:hover{
         background-color: rgba(173, 216, 230, 0.258);
@@ -117,6 +136,7 @@
     .song-info{
         display:grid;
         height:100%;
+        min-width: 87px;
     }
 
     
@@ -124,27 +144,37 @@
         display:grid;
         height:100%;
         color:gray;
+        min-width: 87px;
     }
 
     .index{
-        visibility: visible;
+        display:block;
+        padding-top: 15px;
     }
 
     .index-unreleased{
-        visibility:visible;
-        display:flex;
+        display:block;
         color:gray;
+        padding-top: 15px;
     }
     .image{
         display: grid;
+        overflow: hidden;
+        min-width: 50px;
+        min-height: 50px;
     }
     
     .songArtist{
         width:100%;
     }
 
+    .timestamp{
+        padding-top: 15px;
+    }
+
     .timestamp-unreleased {
         color:gray;
+        padding-top: 15px;
     }
     
     .status-unreleased {

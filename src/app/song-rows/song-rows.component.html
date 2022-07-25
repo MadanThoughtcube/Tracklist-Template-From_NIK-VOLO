@@ -12,7 +12,7 @@
     
         <!--album/single image-->
         <div class="image">
-            <img src="default_100.png">
+            <img style="width:50px; height:50px" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg">
         </div>
     
         <!--Artist/Songname-->
@@ -40,7 +40,7 @@
                     <app-bottomsheet></app-bottomsheet>
                 </div>
                <div class="desktop-popup">
-                <button mat-icon-button aria-label="other links" (click)="openDialogLinks()">
+                <button mat-icon-button aria-label="other links" (click)="openDialogLinks()" style="width:100%">
                     <mat-icon>open_in_new</mat-icon>
                 </button>
                </div>
@@ -67,7 +67,7 @@
     
         <!--album/single image-->
         <div class="image">
-            <img src="default_100.png">
+            <img style="width:50px; height:50px" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg">
         </div>
     
         <!--Artist/Songname-->
@@ -89,7 +89,7 @@
         </div>
     
         <!--Status of Song-->
-        <div class="status" style="color:gr; width:140px;">
+        <div class="status" style="color:gr">
             <div *ngIf=song.status>
                 <div class="mobile-bottomsheet">
                     <app-bottomsheet></app-bottomsheet>
@@ -100,7 +100,7 @@
                 </button>
                </div>
             </div>
-            <div *ngIf=!song.status>
+            <div *ngIf=!song.status class="notify-container">
                 <button id="notifyme-button" style="background-color: rgba(128, 128, 128, 0.365); color: white;" mat-raised-button (click)="openDialog()">
                     Notify Me
                 </button>

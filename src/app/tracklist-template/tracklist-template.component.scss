@@ -1,20 +1,29 @@
 /* CSS for Header*/
 //Mobile CSS
+.tracklistContainer{
+  max-width: 1080px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+
+}
 .header {
   display:grid;
-  grid-template-columns: [index] 0% [image] 35% [info] 25% [timestamp] 25% [links] 0%;
-  column-gap: 16px;
-  text-decoration: underline;
+  grid-template-columns: [image] 7% [info] 25% [timestamp] 25% [links]35%;
+  column-gap: 10px;
   color:white;
 
 }
 .headerTitles {
-    color: lightgray;
-    font-size: 11px;
+    color: white;
+    font-size: 12px;
+    font-weight: 100px;
+    text-align: center;
 }
 .gridcell-1{
   display: none;
 }
+
+
 
 
 //Banner
@@ -177,21 +186,26 @@ iframe{
 
 
   //Desktop CSS
-  @media (min-width: 767px) {
+  @media (min-width: 570px) {
     .header {
       display:grid;
-      grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 18%;
-      column-gap: 16px;
+      grid-template-columns: [index] 3% [image] 7% [info] 13% [timestamp] 40% [links] 30%;
+      column-gap: 14px;
       padding-left: 15px;
       padding-right: 15px;
       padding-top:20px;
+      margin-left: 20px;
+      margin-right: 20px;
       border-color: #000000;
       color:white;
       font-size: medium;
-      text-decoration: underline;
+
   }
   .gridcell-1{
     display: grid;
+  }
+  .gridcell-2 {
+    display:grid;
   }
 
   }

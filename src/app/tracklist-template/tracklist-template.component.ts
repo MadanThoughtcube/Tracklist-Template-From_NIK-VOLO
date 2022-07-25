@@ -10,8 +10,8 @@ import { ArtistEntryComponent } from '../artist-entry/artist-entry.component';
 })
 export class TracklistTemplateComponent implements OnInit {
   template: Template = {
-    playlist: "Lorem ipsum",
-    artist: "unknown",
+    playlist: "Name of Album/Mix",
+    artist: "Artist",
     status: true,
   }
 
