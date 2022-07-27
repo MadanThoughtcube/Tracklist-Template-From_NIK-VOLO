@@ -97,7 +97,12 @@
 #listen-button{
     transform: scale(.85);
     text-align: center;
+}
 
+@media (max-width: 570px) {
+    #listen-button{
+        display: none;
+    }
 }
 
 
@@ -201,4 +206,7 @@
         display:flex;
     }
 
+    
+
+    
 }
