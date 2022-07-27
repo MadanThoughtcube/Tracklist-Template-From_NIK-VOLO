@@ -85,12 +85,3 @@ WHAT NEEDS TO BE INPUTTED:
 a. Plus - the plus icon is how the artsit will bring up the ARTIST-ENTRY component where they can fill out the information for each track
 b. Pencil - the pencil icon is the editing feature of the tracklist, it should bring up an overlay of every track seperated by borders as its own blocks, and the artist should have the ability to drag and move around the tracks, edit the info tracks and delete the tracks
 c. Image - the image icon is where the artist can upload their own image and change the background
-
-<<<<<<< HEAD
-## DIAGRAM OF TRACKLIST
-=======
-
-##DIAGRAM
-<img width="1304" alt="PNG image" src="https://user-images.githubusercontent.com/85855067/180820089-606c187e-7456-4f97-9410-9b832ba6d558.png">
-
->>>>>>> f319da4fc1e2bab07e66ee1bc130134aeec54d1b
