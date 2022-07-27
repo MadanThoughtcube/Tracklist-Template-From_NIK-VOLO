@@ -87,6 +87,3 @@ b. Pencil - the pencil icon is the editing feature of the tracklist, it should b
 c. Image - the image icon is where the artist can upload their own image and change the background
 
 
-##DIAGRAM
-<img width="1304" alt="PNG image" src="https://user-images.githubusercontent.com/85855067/180820089-606c187e-7456-4f97-9410-9b832ba6d558.png">
-
