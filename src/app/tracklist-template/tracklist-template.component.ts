@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Template } from 'src/input';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { ArtistEntryComponent } from '../artist-entry/artist-entry.component';
 
 @Component({
   selector: 'app-tracklist-template',
@@ -15,16 +13,7 @@ export class TracklistTemplateComponent implements OnInit {
     status: true,
   }
 
-  constructor(private dialogRef : MatDialog) { }
-  
-  openArtistEntry(){
-    this.dialogRef.open(ArtistEntryComponent, {
-      width : '300px',
-      height: '400px',
-      hasBackdrop: true
-  
-    });
-  }
+  constructor() { }
 
 
   ngOnInit(): void {

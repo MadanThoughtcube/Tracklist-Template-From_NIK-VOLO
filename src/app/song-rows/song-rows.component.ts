@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog'
-import { ArtistEntryComponent } from '../artist-entry/artist-entry.component';
 import { Song } from 'src/songs';
 import { SONGS } from 'src/mock-songs';
 import { PopuplinkComponent } from '../popuplink/popuplink.component';

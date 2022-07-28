@@ -45,11 +45,6 @@
                 </button>
                </div>
             </div>
-            <div *ngIf=!song.status>
-                <button style="background-color: rgba(128, 128, 128, 0.365); color: white;" mat-raised-button (click)="openDialog()">
-                    Contact Options
-                </button>
-            </div>
     
         </div>
         
@@ -90,16 +85,6 @@
     
         <!--Status of Song-->
         <div class="status" style="color:gr">
-            <div *ngIf=song.status>
-                <div class="mobile-bottomsheet">
-                    <app-bottomsheet></app-bottomsheet>
-                </div>
-                <div class="notify-container">
-                <button id="listen-button" style="background-color: rgba(51, 90, 196, 0.531); color: white;" mat-raised-button (click)="openDialogLinks()">
-                    Listen Now
-                </button>
-               </div>
-            </div>
             <div *ngIf=!song.status class="notify-container">
                 <button id="notifyme-button" style="background-color: rgba(128, 128, 128, 0.365); color: white;" mat-raised-button (click)="openDialog()">
                     Notify Me

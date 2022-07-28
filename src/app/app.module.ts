@@ -7,7 +7,6 @@ import { SongRowsComponent } from './song-rows/song-rows.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ArtistEntryComponent } from './artist-entry/artist-entry.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -23,7 +22,6 @@ import { TracklistTemplateComponent } from './tracklist-template/tracklist-templ
   declarations: [
     AppComponent,
     SongRowsComponent,
-    ArtistEntryComponent,
     InputFormComponent,
     BottomsheetComponent,
     LinksComponent,
